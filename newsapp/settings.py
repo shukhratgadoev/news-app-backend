@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os
 from decouple import config
+import os
 
 # Add .env variables anywhere before SECRET_KEY
 
@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
