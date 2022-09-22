@@ -1,4 +1,3 @@
-from dataclasses import fields
 from rest_framework import serializers
 from .models import News
 
@@ -6,5 +5,6 @@ from .models import News
 
 class NewsSerializer(serializers.ModelSerializer):
     class Meta:
-        model: News
+        model = News
         fields = '__all__'
+
